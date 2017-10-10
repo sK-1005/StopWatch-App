@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Stop-Watch</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <link href="stopwatch.css" rel="stylesheet">
+
+
+    </head>
+    <body>
+        <header>
+                <!--Heading-->
+                <div class="container-fluid">
+                    <div id="header">sK-Stopwatch</div>
+                </div>
+
+                <!--lap-time-->
+                <div id="laps">
+                    <span id="lapTitle">Lap:</span>
+                    <span id="lapminutes">00</span>:
+                    <span id="lapseconds">00</span>:
+                    <span id="lapcentiseconds">00</span>
+                </div>
+
+                <!--time-->
+                <div id="time">
+                    <span id="timeTitle">Time:</span>
+                    <span id="timeminutes">00</span>:
+                    <span id="timeseconds">00</span>:
+                    <span id="timecentiseconds">00</span>
+                </div>
+
+                <div id="controls" class="row">
+                    <div class="col-xs-2 col-xs-offset-4">
+                        <div id="startButton" class="control">Start</div>
+                        <div id="stopButton" class="control">Stop</div>
+                        <div id="ResumeButton" class="control">Resume</div>
+                    </div>
+
+                    <div class="col-xs-2 col-xs-offset-4">
+                        <div id="LapButton" class="control">lap</div>
+                        <div id="resetButton" class="control">Reset</div>
+                    </div>
+                </div>
+
+                <div id="lap"></div>
+
+                <script src="stopwatch.js"></script>
+        </header>
+        <footer>
+            <div class="container-fluid">
+                <div id="footer"> Created by Shubham Kumawat</div>
+            </div>        
+        </footer>
+        
+    </body>
+</html>
