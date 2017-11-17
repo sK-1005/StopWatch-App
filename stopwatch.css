@@ -1,0 +1,213 @@
+* {
+    margin: 0;                                    /* The * means "all elements" (a universal selector), so we are setting all elements to have*/ padding: 0;                                   /* zero margins, and zero padding, thus making them look the same in all browsers.*/
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #fff;                       /* background color set to white for html */
+    color: #555;                                  /* color of text set to Black */
+    font-family: 'Lato', 'Arial', sans-serif;     /* Here first preference is 'Lato' and if internet is not present we go for 'Arial' or 'sans' */
+    font-size: 20px;                              /* font-size of text set to 20px for default. We can change it in any of the element later */
+    font-weight: 300;                             /* Font-weight defualt we used here is 300. All font-weights are applied in <link> at html page */
+    text-rendering: optimizeLegibility;           /* This makes our font rendering in a perfect way */
+}
+
+
+/* Applied to header part */
+
+header{
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/sunset-86214_1280.jpg");  
+    background-size: cover;                       /* Applying background image and making it a bit shadowed using linear gradient function */
+    background-position: center;                  /* Setting bacground size and position to cover and fixed. */
+    height: 100vh;                                /* Making header element height to full 100vh of viewport. It means the view (first page) you */
+}                                                 /* get at first at opening the website, it's total 100% space must be covered with header*/
+
+
+
+/* Reusable Items */
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+   
+}
+
+#lapseconds, #lapcentiseconds, #timeseconds, #timecentiseconds {
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 2px 2px 8px #e67e22;
+}
+
+#timeminutes, #lapminutes{
+    color: #fff;
+    font-size: 40px;
+    
+    text-shadow: 2px 2px 8px #e67e22;
+}
+
+/*--------------------------------*/
+/*----------Header and Footer----------------*/
+/*--------------------------------*/
+
+.heading{
+    font-size: 50px;                              /* Here, we changed the font-size of text to 40px, where ealier we set it to 20px by default. */
+    color: #fff;                                  /* color of font white */
+    margin-bottom: 20px;                          /* Making some space between itself and #heading2 for image to align properly */
+    text-align: center;
+    /*animation: text-flicker 3s linear infinite;*/
+    text-shadow: 2px 2px 8px #e67e22;
+    width: 100%;
+}
+
+
+/*--------------------------------*/
+/*----------Buttons----------------*/
+/*--------------------------------*/
+
+.btn {
+    display: inline;
+    text-decoration: none;
+    border-radius: 100%;
+    float: left;
+    cursor: pointer;
+    
+    }
+
+.control{
+    border-color: #e67e22;
+    border: 2px solid #e67e22;
+    background-color: transparent;
+    color: #e67e22;
+    height: 100px;
+    width: 100px;
+    line-height: 70px;
+    margin-left: 30px;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+
+.control:hover,
+.control:active {
+    background-color: #e67e22;
+    border-color: #fff;
+    border: 2px solid #fff;
+    color: #fff;
+}   
+
+.btn-ghost{
+    margin-left: 40%;
+}
+
+.btn-full{
+    padding-right: 5px;
+}
+
+.controls{
+    margin-top: 20px;
+}
+
+
+/*--------------------------------*/
+/*----------LAP COUNTER----------------*/
+/*--------------------------------*/
+
+.Lap{
+    background: linear-gradient(rgba(242, 185, 136, 0.7), transparent);
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    width: 100%;
+    
+}
+
+#lap{
+    max-height: 270px;
+    overflow-y: scroll;
+    color: #fff;
+    
+}
+
+.laps{                                      /* See function addLap() in stopwatch.js which we made element dynamically in script. */
+    height: 50px;
+    border-bottom: 2px solid #e67e22;
+    margin: 15px;
+    
+}
+
+.laptimetitle{
+    float: left;
+    font-size: 1.5em;
+    color: #e67e22;
+    text-shadow: 1px 1px 1px #fff;
+} 
+
+.laptime{
+    float: right;
+    font-size: 40px;
+    color: #e67e22;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+#lapTitle{                          /* Lap: */
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 2px 2px 8px #e67e22;
+}
+  
+/*--------------------------------*/
+/*----------TIME COUNTER----------------*/
+/*--------------------------------*/
+
+#timeTitle{
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 2px 2px 8px #e67e22;
+}
+
+.Time{
+    background: linear-gradient(transparent, rgba(242, 185, 136, 0.7));
+    width: 100%;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 2px 2px 8px #e67e22;
+    text-align: center;
+}
+
+
+.copyright p{
+    
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 2px 2px 8px #e67e22;}
+
+.copyright{
+    position: fixed;
+    bottom: 0;
+    left: 30%;
+    padding-bottom: 5px;
+}
+
+
+.web{
+    margin-left: 44%; 
+    margin-top: 25px;
+    
+}
+
+.web a{
+    border: 2px solid #e67e22;
+    color: #fff;
+    border-radius: 100px;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.web a:hover{
+    background-color: #e67e22;
+    border-color: #fff;
+    border: 2px solid #fff;
+    color: #fff;
+}   
